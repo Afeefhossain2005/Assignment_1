@@ -167,5 +167,65 @@ nav a{
 .animated-border:hover::after{
     transfrom: scale(1);
 }
+/* Scoped styles for contact.html */
+#contact-page .animated-border {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+#contact-page .animated-border::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db; 
+    transition: width 0.3s ease-in-out;
+}
+#contact-page .animated-border:hover::after {
+    width: 100%;
+}
+/* Button hover animation */
+#contact-page form input[type="submit"],
+#contact-page form input[type="reset"] {
+    background-color: #3498db; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#contact-page form input[type="submit"]:hover,
+#contact-page form input[type="reset"]:hover {
+    background-color: #1f78b4; 
+    transform: scale(1.05);
+}
 
+/* Field animation */
+#contact-page form input,
+#contact-page form textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact-page form input:focus,
+#contact-page form textarea:focus {
+    border-color: #ff0000; 
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
+    outline: none;
+}
+
+/* Slide-in animation for form */
+#contact-page #contact-form {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
