@@ -165,7 +165,7 @@ nav a{
     pointer-events: none;
 }
 .animated-border:hover::after{
-    transfrom: scale(1);
+    transform: scale(1);
 }
 /* Scoped styles for contact.html */
 #contact-page .animated-border {
@@ -228,4 +228,23 @@ nav a{
         transform: translateY(0);
     }
 }
+#wrapper a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
 
+#wrapper a:hover {
+    color: #2980b9;
+    transform: scale(1.05);
+}
+#navbar-footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#navbar-footer a:hover {
+    color: #2980b9;
+    transform: scale(1.05);
+}
