@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6,p,li
 /* Defining a style for a set of tags not separated by commas applies the style only to all tags within the preceding tag*/ 
 #banner h1 
 { 
-    color: white; 
+    color: black; 
 } 
 /* Advanced Web design relies on class or ID styles, never tables */ 
 .box 
@@ -103,8 +103,11 @@ figurecaption{
 
 }
 nav{
-    background-color: whitesmoke;
+    background-color: black;
     overflow: hidden;
+    border-radius: 15px;
+    padding: 14px 20px;
+    box-shadow: 0% 2px 10px rgba(0, 0, 0, 0.2);
 }
 nav a{
     color:black;
