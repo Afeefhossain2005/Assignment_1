@@ -168,22 +168,22 @@ nav a{
     }
 }
 #wrapper a {
-    color: #0099ff;
+    color: #ffbb00;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 
 #wrapper a:hover {
-    color: #2980b9;
+    color: #ffbb00;
     transform: scale(1.05);
 }
 #navbar-footer a {
-    color: #3498db;
+    color: deepskyblue;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 
 #navbar-footer a:hover {
-    color: #2980b9;
+    color: deepskyblue;
     transform: scale(1.05);
 }
