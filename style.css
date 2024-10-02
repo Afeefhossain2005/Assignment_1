@@ -14,7 +14,7 @@ body
     height: 800px; 
     margin-left: auto; 
     margin-right: auto; 
-    background: linear-gradient(180deg, #5a4fcf, #ff6f20);
+    background: linear-gradient(180deg, #5a4fcf, #ff7e00);
     background-size: auto; 
 } 
 /* The right-column ID style is floated right */ 
@@ -111,7 +111,7 @@ nav{
 }
 footer nav{
     height: 80px; 
-    background: linear-gradient(180deg, #ff6f20, #ffcc00);
+    background: linear-gradient(180deg, #ff7e00, #ffcc00);
     overflow: hidden;
     border-radius: 25px;
     padding: 14px 20px;
