@@ -40,8 +40,10 @@
                         <input type="email" id="email" name="email" required size="32" placeholder="Enter your complete email">
                     </p>
                     <p>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" size="32" placeholder="Enter your phone number">
+                        <label for="phone">Tel#:</label>
+                        <input type="tel" id="phone" name="phone" size="32" placeholder="format: XXX-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}" 
+                        required oninvalid="this.setCustomValidity('Please enter the phone number in the format 123-456-7890')"
+                        oninput="setCustomValidity('')">
                     </p>
                     
                     <p>

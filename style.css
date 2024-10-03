@@ -17,6 +17,7 @@ body
     margin-right: auto; 
     background: linear-gradient(180deg, #5a4fcf, #ff7e00);
     background-size: auto; 
+
 } 
 /* The right-column ID style is floated right */ 
 #right-column 
@@ -231,3 +232,17 @@ box-container {
         width: 100%; /*on mobile */
     }
 }
+#contact-form {
+    float: right;
+    width: 310px; 
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 10px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact-page form p {
+    margin: 10px 0; 
+}
+
+
