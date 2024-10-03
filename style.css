@@ -233,11 +233,11 @@ box-container {
     }
 }
 #contact-form {
-    float: right;
+    float: left;
     width: 310px; 
     margin-top: 20px;
     margin-right: 15px;
-    padding: 10px;  
+    padding: 11px;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
