@@ -6,6 +6,7 @@ body
     font-family: Verdana, Geneva, Arial, sans-serif; 
     padding:0px; 
     margin:0px; 
+    line-height: 1.6;
 } 
 /* The wrapper ID style is used with a div tag to provide a 960px wide page */ 
 #wrapper 
@@ -126,8 +127,7 @@ nav a{
 }
 
 /* Button hover animation */
-#contact-page form input[type="submit"],
-#contact-page form input[type="reset"] {
+#contact-page form input[type="submit"] {
     background-color: #3498db; 
     color: #fff;
     border: none;
@@ -135,8 +135,7 @@ nav a{
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#contact-page form input[type="submit"]:hover,
-#contact-page form input[type="reset"]:hover {
+#contact-page form input[type="submit"]:hover{
     background-color: #1f78b4; 
     transform: scale(1.05);
 }
@@ -186,4 +185,49 @@ nav a{
 #navbar-footer a:hover {
     color: deepskyblue;
     transform: scale(1.05);
+}
+#container{
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
+#container h2{
+    text-align: center;
+    margin-bottom: 1px;
+    color: #fff;
+}
+box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.box {
+    display: block;
+    width: 30%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.box:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .box {
+        width: 45%; /* on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /*on mobile */
+    }
 }
