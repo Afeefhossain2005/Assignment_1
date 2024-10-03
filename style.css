@@ -296,20 +296,20 @@ box-container {
             display: flex;
             justify-content: center;
             padding: 0;
-            margin: 15px 0 0;
+            margin: 20px auto 0;
             list-style-type: none;
+            width:fit-content;
         }
         .projectslide ul li {
             margin: 0 5px;
-            align-items: center;
-            text-align: center;
         }
         .btnlbl
         {
             background-color: black;
             cursor: pointer;
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 1rem;
+            height: 1rem;
+            padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
