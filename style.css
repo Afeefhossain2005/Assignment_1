@@ -257,5 +257,69 @@ box-container {
     max-width: 100%;
     height: auto;
 }
-
+.projectslide , .Frame
+        {
+            position: relative;
+            height: 525px;
+            width: 300px;
+            margin: auto;
+        }
+        .slide
+        {
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        .show:checked + .slide
+        {
+            opacity: 1;
+        }
+        .projectslide img{
+            width: 100%;
+        }
+        .button
+        {
+            display: inline-block;
+        }
+        .projectslide {
+            position: relative;
+            width: 100%;
+            max-width: 412px; /* Adjusted to match your image width */
+            margin-bottom: 20px;
+        }
+        .projectslide ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 15px 0 0;
+            list-style-type: none;
+        }
+        .projectslide ul li {
+            margin: 0 5px;
+            align-items: center;
+            text-align: center;
+        }
+        .btnlbl
+        {
+            background-color: black;
+            cursor: pointer;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: .5rem;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btnlbl:hover {
+            background-color: #ffffff;
+        }
 
