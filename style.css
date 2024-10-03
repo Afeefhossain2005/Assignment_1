@@ -112,10 +112,9 @@ nav{
     box-shadow: 0% 2px 10px rgba(0, 0, 0, 0.2);
 }
 footer nav{
-    height: 80px; 
     background: linear-gradient(180deg, #ff7e00, #ffcc00);
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 14px 20px;
     box-shadow: 0% 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -243,6 +242,20 @@ box-container {
 
 #contact-page form p {
     margin: 10px 0; 
+}
+#otu {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 125px auto;
+    opacity: 1;
+    border-radius: 15px; 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+#otu {
+    max-width: 100%;
+    height: auto;
 }
 
 
