@@ -32,17 +32,17 @@ height:100px;
 background-color:black;
 }
 .box {
-width: 90%;
+width: 70%;
 min-height:120px;
 background-color:dark-red;
 margin: 15px;
 opacity:1;}
 .button {
-font-size:x-large;
+font-size:medium;
 text-decoration:none;
-background-color:LightBlue;
+background-color:orange;
 display:block;
-width:25%;float:left;
+width:10%;float:left;
 padding:5px;
 margin:5px;
 border-radius:5px;
