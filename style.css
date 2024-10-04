@@ -313,6 +313,10 @@ box-container {
         text-align: center; /* Center the text */
         padding: 10px;
     }
+    nav {
+        padding: 10px;
+        text-align: center;
+    }
 
     /* Adjust boxes to fit mobile screen */
     .box {
