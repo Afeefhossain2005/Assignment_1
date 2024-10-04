@@ -12,11 +12,11 @@ body
 #wrapper 
 { 
     width: 960px;
-    height: 800px; 
+    height: 800px; /*this is the size of the wrapper which is the body of the website*/
     margin-left: auto; 
     margin-right: auto; 
-    background: linear-gradient(180deg, #5a4fcf, #ff7e00);
-    background-size: auto; 
+    background: linear-gradient(180deg, #5a4fcf, #ff7e00); /*180deg means it changes the color from top to bottom in this case it would be purple to bright orange*/
+    background-size: auto; /*this will fill it auto*/ 
 
 } 
 /* The right-column ID style is floated right */ 
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6,p,li
 } 
 #footer 
 { 
-    height:80px; 
+    height:80px; /*this adjusts the height of the nav bar in the footer*/
 }
 #banner
 { 
@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6,p,li
 { 
     clear: both; 
 }
-header.footer{
+header.footer{/*header and footer colors*/
    background-color: black;
    color: rgb(0, 0, 0);
    padding-top: 5px;
@@ -107,20 +107,20 @@ figurecaption{
 
 }
 nav{
-    background: linear-gradient(180deg, #001f3f, #5a4fcf);
+    background: linear-gradient(180deg, #001f3f, #5a4fcf);/*this makes it so the the nav from top is deepblue the changes to purple the numbers were chosen from the adobe website the assignment includeed*/
     overflow: hidden;
     border-radius: 15px;
     padding: 14px 20px;
     box-shadow: 0% 2px 10px rgba(0, 0, 0, 0.2);
 }
 footer nav{
-    background: linear-gradient(180deg, #ff7e00, #ffcc00);
+    background: linear-gradient(180deg, #ff7e00, #ffcc00);/*same here it went from bright orange to soft yellow evry color mention was from the site provided by the assignment*/ 
     overflow: hidden;
     border-radius: 15px;
     padding: 14px 20px;
     box-shadow: 0% 2px 10px rgba(0, 0, 0, 0.2);
 }
-nav a{
+nav a{/*this is the transformation for the links*/
     color:black;
     text-align: center;
     float: right;
@@ -137,7 +137,7 @@ nav a{
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#contact-page form input[type="submit"]:hover{
+#contact-page form input[type="submit"]:hover{/*this is the hover animations for the submit button in contact.html dile*/
     background-color: #1f78b4; 
     transform: scale(1.05);
 }
@@ -149,7 +149,7 @@ nav a{
 }
 
 #contact-page form input:focus,
-#contact-page form textarea:focus {
+#contact-page form textarea:focus {/*this isnt nessary but i still added it for fun what this does is when click on the box to type it will show borderline color of red meaning you clicked it and you can type whenever*/
     border-color: #ff0000; 
     box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
     outline: none;
@@ -162,29 +162,29 @@ nav a{
     animation: slideIn 1s forwards;
 }
 
-@keyframes slideIn {
+@keyframes slideIn {/*the @keyframes allow the CSS3 animations to work this is crucial for the animations to work in a responsive web page*/
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1;/*the seconds  it takes*/
+        transform: translateY(0);/*as you open the contact page it will slide the form from down to up as the translateY(positive number)*/
     }
 }
-#wrapper a {
+#wrapper a {/*the color of the button in the wrapper*/
     color: #ffbb00;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 
-#wrapper a:hover {
+#wrapper a:hover {/*hover animations for the links and defined color of yellow*/
     color: #ffbb00;
     transform: scale(1.05);
 }
-#navbar-footer a {
+#navbar-footer a {/*color of button for the links in the footer aswell as hover animations shown in the next few lines*/
     color: deepskyblue;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 
-#navbar-footer a:hover {
+#navbar-footer a:hover {/*^^^hover animations for the footer links*/
     color: deepskyblue;
     transform: scale(1.05);
 }
@@ -247,28 +247,28 @@ box-container {
 #contact-page form p {
     margin: 10px 0; 
 }
-#otu {
+#otu {/*this is the picture i got for my home page where its a logo of otu but the background matches with my theme perfectly altough its simple i dont mind it*/
     width: 600px;
     height: auto;
     display: block;
     margin: 125px auto;
     opacity: 1;
-    border-radius: 15px; 
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    border-radius: 15px; /*this softens the edges*/ 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));/*this borders the pic with a white ish color to make it visaully appealing to users*/
 }
 
 #otu {
-    max-width: 100%;
+    max-width: 100%;/*sizes and height*/
     height: auto;
 }
 h2 {
     font-weight: 300;
-    font-size: 2em;
+    font-size: 2em;/*sixe for the headerr*/
 }
 
 .box {
     width: 200px; 
-    height: 150px;
+    height: 150px;/*sixe for the box*/
 }
 
 

@@ -11,11 +11,11 @@
     <!-- phone style sheet-->
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
 </head>
-<body id="contact-page">
+<body id="contact-page"><!--identifier for more animation-->
     <header>
         <div id="wrapper">
             <nav>
-                <h5>
+                <h5><!--links-->
                     <a href="maincode.html">About Me</a>
                     <a href="projects.html">Projects</a>
                     <a href="contact.html">Contact Me</a>
@@ -24,35 +24,35 @@
                 <img src="image.png" alt="Logo" width="50" height="50">
                 <img src="moon.jpg" width="70px" height="50px">
             </nav>
-            <article>
+            <article><!--contact me page-->
                 <h1>Contact Me Page</h1>
                 <p>Please do not hesitate to contact me at your convenience. You may reach me by adding your email and name below or by calling me directly at [xxx-xxx-xxxx]. Thank you for your time and consideration.</p>
             </article>
-            <section id="contact-form">
-                <h1>Contact Form</h1>
+            <section id="contact-form"><!--identifier for further action for that part-->
+                <h1>Contact Form</h1><!--form where to email, user inputs email, name and phone correctly or it will popped up as a error message-->
                 <form action="mailto:afeef.hossain@ontariotechu.net" method="post" enctype="text/plain" name="contactForm">
                     <p>
-                        <label for="name">Name:</label>
+                        <label for="name">Name:</label><!--name input-->
                         <input type="text" id="name" name="name" required size="32" placeholder="Enter your complete name">
                     </p>
                     <p>
-                        <label for="email">Email:</label>
+                        <label for="email">Email:</label><!--email input-->
                         <input type="email" id="email" name="email" required size="32" placeholder="Enter your complete email">
                     </p>
                     <p>
-                        <label for="phone">Tel#:</label>
+                        <label for="phone">Tel#:</label> <!--tel input i added a extra line i didnt seem to find it in out lecture but the setCustomValidity() is  essentially to make sure the user inputs that pattern and in numbers if not the message will not go through-->
                         <input type="tel" id="phone" name="phone" size="32" placeholder="format: XXX-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}" 
                         required oninvalid="this.setCustomValidity('Please enter the phone number in the format 123-456-7890')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')"><!--i found this on :https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/setCustomValidity-->
                     </p>
                     
                     <p>
-                        <label for="comment">Enter your message here:</label>
+                        <label for="comment">Enter your message here:</label><!--user input most of this is from the lecture that we did with the professor just added things that were not there that i needed-->
                         <br><br>
                         <textarea id="comment" name="comment" cols="40" rows="8" placeholder="Type your message..."></textarea>
                     </p>
                     <p>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit"><!--submit button for form to work-->
                     </p>
                 </form>
             </section>
@@ -66,10 +66,9 @@
                 <a href="projects.html">Projects</a>
                 <a href="contact.html" >Contact Me</a>
                 <a href="home.html" >Home</a>
-                <a>&copy; 2024 Company Name. All rights reserved.</a>
+                <a>&copy; 2024 Afeef Hossain. All rights reserved.</a><!--copyright symbol with my name as required did this from:https://blog.hubspot.com/website/html-code-copyright#:~:text=To%20add%20a%20copyright%20symbol,it%20appear%20on%20a%20page.-->
             </ul>
-            <img src="sunrise.webp" width="70px" height="50px"> 
-           
+            <img src="sunrise.webp" width="70px" height="50px"><!--picture-->           
         </nav>
     </footer> 
 </body>
