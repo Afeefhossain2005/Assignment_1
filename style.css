@@ -270,7 +270,55 @@ box-container {
     width: 50px; 
     height: 25px;/*sixe for the box*/
 }
+/* Media query for mobile devices */
 @media (max-width: 480px) {
+    /* Make wrapper responsive */
+    #wrapper {
+        width: 100%; /* Full width on small screens */
+        padding: 10px;
+    }
+
+    /* Stack columns vertically */
+    #left-column, 
+    #right-column {
+        width: 100%; /* Full width for columns on mobile */
+        float: none; /* No float to stack them */
+        height: auto; /* Allow columns to adjust their height */
+    }
+
+    /* Responsive contact form */
+    #contact-page form input, 
+    #contact-page form textarea {
+        width: 100%; /* Full width inputs */
+        padding: 10px;
+    }
+
+    #contact-page form input[type="submit"] {
+        width: 100%;
+    }
+
+    /* Ensure the image scales properly */
+    #otu {
+        width: 100%; /* Full width image */
+        height: auto;
+        margin: 20px 0;
+    }
+
+    /* Navigation links responsive */
+    nav a, 
+    #navbar-footer a {
+        float: none; /* Remove float */
+        display: block; /* Stack links vertically */
+        width: 100%; /* Full width links */
+        text-align: center; /* Center the text */
+        padding: 10px;
+    }
+
+    /* Adjust boxes to fit mobile screen */
+    .box {
+        width: 100%; /* Full width boxes */
+        margin-bottom: 20px; /* Add space between boxes */
+    }
     .btnlbl {
         width: 1rem;
         height: 1rem;
