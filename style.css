@@ -310,12 +310,13 @@ box-container {
         float: none; /* Remove float */
         display: inline-block; /* Stack links horizontally */
         width: 100%; /* Full width links */
-        text-align: center; /* Center the text */
         padding: 10px;
     }
     nav {
         padding: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: flex-start; /* Aligns links to the left */
+        flex-wrap: nowrap;
     }
 
     /* Adjust boxes to fit mobile screen */
