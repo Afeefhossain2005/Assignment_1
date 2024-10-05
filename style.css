@@ -12,7 +12,7 @@ body
 #wrapper 
 { 
     width: 960px;
-    height: 800px; /*this is the size of the wrapper which is the body of the website*/
+    height: auto; /*this is the size of the wrapper which is the body of the website*/
     margin-left: auto; 
     margin-right: auto; 
     background: linear-gradient(180deg, #5a4fcf, #ff7e00); /*180deg means it changes the color from top to bottom in this case it would be purple to bright orange*/
@@ -23,7 +23,7 @@ body
 #right-column 
 { 
     float: right; 
-    width: 600px;
+    width: 60%;
     height: 600px; 
     background-color:LightGray; 
 } 
@@ -31,7 +31,7 @@ body
 #left-column 
 { 
     float: left; 
-    width: 360px;
+    width: 35%;
     background-color:silver; 
     height:600px; 
 } 
@@ -42,11 +42,12 @@ h1,h2,h3,h4,h5,h6,p,li
 } 
 #footer 
 { 
-    height:80px; /*this adjusts the height of the nav bar in the footer*/
+    height:auto; /*this adjusts the height of the nav bar in the footer*/
 }
 #banner
 { 
-    height:120px; 
+    height:auto;
+    min-height:120px; 
     background-color:rgb(3, 121, 238); 
 } 
 /* Defining a style for a set of tags not separated by commas applies the style only to all tags within the preceding tag*/ 
@@ -57,8 +58,8 @@ h1,h2,h3,h4,h5,h6,p,li
 /* Advanced Web design relies on class or ID styles, never tables */ 
 .box 
 { 
-    height: 150px; 
-    width: 150px;
+    height: auto; 
+    width: 30%;
     float: left; 
     background-color:tan; 
     margin: 15px; 
@@ -86,14 +87,14 @@ header.footer{/*header and footer colors*/
 aside{
     background-color: beige;
     float: right;
-    width: 200px;
+    width: 20%;
     padding: 5px;
     margin: 5px;
 }
 figure{
     position:relative;
-    width : 230px;
-    height: 220px;
+    width : 23%;
+    height: auto;
     margin: 5px;
     padding: 5px;
     background-color: whitesmoke;
@@ -237,7 +238,7 @@ box-container {
 }
 #contact-form {
     float: left;
-    width: 310px; 
+    width: 80%; 
     margin-top: 20px;
     margin-right: 15px;
     padding: 11px;  
@@ -248,10 +249,10 @@ box-container {
     margin: 10px 0; 
 }
 #otu {/*this is the picture i got for my home page where its a logo of otu but the background matches with my theme perfectly altough its simple i dont mind it*/
-    width: 600px;
+    width: 80%;
     height: auto;
     display: block;
-    margin: 125px auto;
+    margin: 2rem auto;
     opacity: 1;
     border-radius: 15px; /*this softens the edges*/ 
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));/*this borders the pic with a white ish color to make it visaully appealing to users*/
@@ -267,68 +268,6 @@ box-container {
 }
 
 .box {
-    width: 50px; 
-    height: 25px;/*sixe for the box*/
-}
-/* Media query for mobile devices */
-@media (max-width: 480px) {
-    /* Make wrapper responsive */
-    #wrapper {
-        width: 100%; /* Full width on small screens */
-        padding: 10px;
-    }
-
-    /* Stack columns vertically */
-    #left-column, 
-    #right-column {
-        width: 100%; /* Full width for columns on mobile */
-        float: none; /* No float to stack them */
-        height: auto; /* Allow columns to adjust their height */
-    }
-
-    /* Responsive contact form */
-    #contact-page form input, 
-    #contact-page form textarea {
-        width: 100%; /* Full width inputs */
-        padding: 10px;
-    }
-
-    #contact-page form input[type="submit"] {
-        width: 100%;
-    }
-
-    /* Ensure the image scales properly */
-    #otu {
-        width: 100%; /* Full width image */
-        height: auto;
-        margin: 20px 0;
-    }
-
-    /* Navigation links responsive */
-    nav a, 
-    #navbar-footer a {
-        float: none; /* Remove float */
-        display: inline-block; /* Stack links horizontally */
-        width: 100%; /* Full width links */
-        padding: 10px;
-    }
-    nav {
-        padding: 10px;
-        display: flex;
-        justify-content: flex-start; /* Aligns links to the left */
-        flex-wrap: nowrap;
-    }
-
-    /* Adjust boxes to fit mobile screen */
-    .box {
-        width: 100%; /* Full width boxes */
-        margin-bottom: 20px; /* Add space between boxes */
-    }
-    .btnlbl {
-        width: 1rem;
-        height: 1rem;
-        padding: 0.5rem;
-        font-size: 0.8rem;
-        margin-left: 20px;
-    }
+    width: 30%; 
+    height: auto;/*sixe for the box*/
 }
