@@ -11,72 +11,76 @@
     <!-- phone style sheet-->
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <style>
-        .projectslide , .Frame {
-            position: relative;
-            height: 525px;
-            width: 300px;
-            margin: auto;
-        }
-        .slide {
-            width: 100%;
-            overflow: hidden;
-            position: absolute;
-            height: 100%;
-            left: 0;
-            top: 0;
-            opacity: 0;
-            transition: opacity 3s;
-        }
-        .show:checked + .slide {
-            opacity: 1;
-        }
-        .projectslide img {
-            width: 100%;
-        }
-        .button {
-            display: inline-block;
-        }
-        .projectslide {
-            position: relative;
-            width: 100%;
-            max-width: 412px; 
-            margin: 0 auto;
-            padding-bottom: 20px;
-        }
-        .projectslide ul {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 20px auto 0;
-            list-style-type: none;
-            width: fit-content;
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .projectslide ul li {
-            margin: 0 5px;
-        }
-        .btnlbl {
-            background-color: black;
-            cursor: pointer;
-            width: 0.2rem;
-            height: 0.2rem;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            text-align: center;
-            margin-left: 65px;
-            border-radius: .5rem;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-        .btnlbl:hover {
-            background: linear-gradient(180deg, blue, purple);
-        }
+        .projectslide, .Frame {
+    position: relative;
+    height: 525px;
+    width: 300px;
+    margin: auto;
+}
+
+.slide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.show:checked + .slide {
+    opacity: 1;
+}
+
+.projectslide img {
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+}
+
+.projectslide {
+    width: 100%;
+    max-width: 412px; 
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.projectslide ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px auto 0;
+    list-style-type: none;
+    width: fit-content;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.projectslide ul li {
+    margin: 0 5px;
+}
+
+.btnlbl {
+    background-color: black;
+    cursor: pointer;
+    width: 0.2rem;
+    height: 0.2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 65px;
+    border-radius: .5rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btnlbl:hover {
+    background: linear-gradient(180deg, blue, purple);
+}
     </style>
 </head>
 <body>

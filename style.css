@@ -61,28 +61,30 @@ h1,h2,h3,h4,h5,h6,p,li
     height: auto; 
     width: 30%;
     float: left; 
-    background-color:tan; 
     margin: 15px; 
-    opacity:.5; 
+    opacity:.5;
+    display: block;
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 } 
 /* The following pseudo-class applies to the box class when in a hovered state */ 
 .box:hover 
 { 
-    background-color:white; 
     opacity:1; 
-    transform: scale(1.05);
     transition: 0.3s ease;
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
 } 
 /* This clear class style terminates float */ 
 .clear
 { 
     clear: both; 
-}
-header.footer{/*header and footer colors*/
-   background-color: black;
-   color: rgb(0, 0, 0);
-   padding-top: 5px;
-   padding-bottom: 5px; 
 }
 aside{
     background-color: beige;
@@ -101,7 +103,7 @@ figure{
     border: 2px solid black;
 
 }
-figurecaption{
+figcaption{
     position:bottom;
     background-color: rgb(0, 0, 0);
     color: wheat;
@@ -200,30 +202,14 @@ nav a{/*this is the transformation for the links*/
     text-align: center;
     margin-bottom: 1px;
     color: #fff;
+    font-weight: 100;
+    font-size: 1em;/*sixe for the headerr*/
 }
 box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-}
-.box {
-    display: block;
-    width: 30%;
-    padding: 20px;
-    background-color: #e0e0e0;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-   
-}
-.box:hover {
-    background-color: #007bff;
-    color: white;
-    transform: scale(1.05);
-    
 }
 @media (max-width: 768px) {
     .box {
@@ -251,23 +237,15 @@ box-container {
 #otu {/*this is the picture i got for my home page where its a logo of otu but the background matches with my theme perfectly altough its simple i dont mind it*/
     width: 80%;
     height: auto;
+    max-width: 100%;/*sizes and height*/
     display: block;
     margin: 2rem auto;
     opacity: 1;
     border-radius: 15px; /*this softens the edges*/ 
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));/*this borders the pic with a white ish color to make it visaully appealing to users*/
 }
-
-#otu {
-    max-width: 100%;/*sizes and height*/
-    height: auto;
-}
-#container h2 {
-    font-weight: 100;
-    font-size: 1em;/*sixe for the headerr*/
-}
-
-.box {
-    width: 30%; 
-    height: auto;/*sixe for the box*/
+video {
+    width: 66%; /* Video will take up 66% of the parent container's width */
+    height: auto; /* Height will adjust automatically to maintain the aspect ratio */
+    max-width: 100%; /* Prevents the video from exceeding its container */
 }
