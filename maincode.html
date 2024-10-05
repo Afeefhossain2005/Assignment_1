@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- lang attribute -->
 <head>
     <meta charset='utf-8'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
@@ -10,6 +10,7 @@
     <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
     <!-- phone style sheet-->
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <title>About Me - Afeef Hossain</title> <!--title tag -->
 </head>
 <body>
     <header>
@@ -22,8 +23,8 @@
                     <a href="index.html" >Home</a>
                 </h5>
                 
-                <img src="image.png" width="50px" height="50px"> <!--pictures-->
-                <img src="moon.jpg" width="70px" height="50px">
+                <img src="image.png" width="50" height="50" alt="Profile Logo"> <!-- image -->
+                <img src="moon.jpg" width="70" height="50" alt="Moon Image"> <!-- image -->
             </nav>
             <article><!--main body-->
                 <h1>About Me</h1>
@@ -31,23 +32,22 @@
                 <p>I love being active and try to spend as much time outdoors as I can, whether it's hiking or just chilling outside. When I'm not soaking up the sun, you’ll probably find me binge-watching movies and TV shows or getting lost in video games. I believe in keeping things balanced and making time for fun while I tackle my studies.</p>
                 <p>Can’t wait to see what the future holds in the tech world!</p>
             </article>
-            <video  controls poster="aboutme.mp4">
+            <video controls poster="aboutme.mp4">
                 <source src="aboutme.mp4" type="video/mp4"><!--video-->
             </video>
         </div>
     </header>
-     <footer id="navbar-footer">
+    <footer id="navbar-footer">
        <nav>
-        <h6>
-            <a href="maincode.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact Me</a>
-            <a href="index.html">Home</a>
-            <a>&copy; 2024 Afeef Hossain. All rights reserved.</a>
-        </h6>
-        <img src="sunrise.webp" width="70px" height="50px"><!--picture-->
+            <ul> <!-- Wrapped links in <li> -->
+                <li><a href="maincode.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>&copy; 2024 Afeef Hossain. All rights reserved.</li>
+            </ul>
+            <img src="sunrise.webp" width="70" height="50" alt="Sunrise Image"> <!-- image -->
        </nav>
-       
     </footer> 
 </body>
 </html>

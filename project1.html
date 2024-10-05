@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
+    <title>Afeef Hossain's Project Page</title> <!--title -->
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <meta name="viewport" content="width=device-width">
     <!-- full-size monitor style sheet-->
@@ -12,93 +13,94 @@
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <style>
         .projectslide, .Frame {
-    position: relative;
-    height: 525px;
-    width: 300px;
-    margin: auto;
-}
+            position: relative;
+            height: 525px;
+            width: 300px;
+            margin: auto;
+        }
 
-.slide {
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
+        .slide {
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
 
-.show:checked + .slide {
-    opacity: 1;
-    z-index: 1; /* Bring the active slide to the front */
-}
+        .show:checked + .slide {
+            opacity: 1;
+            z-index: 1; /* Bring the active slide to the front */
+        }
 
-.projectslide img {
-    width: 100%;
-}
+        .projectslide img {
+            width: 100%;
+        }
 
-.button {
-    display: inline-block;
-}
+        .button {
+            display: inline-block;
+        }
 
-.projectslide {
-    position: relative;
-    width: 100%;
-    max-width: 412px; 
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
+        .projectslide {
+            position: relative;
+            width: 100%;
+            max-width: 412px; 
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
 
-.projectslide ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 20px auto 0;
-    list-style-type: none;
-    width: fit-content;
-    bottom: -50px;
-    position: absolute;
-    transform: translateX(-50%);
-}
+        .projectslide ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px auto 0;
+            list-style-type: none;
+            width: fit-content;
+            bottom: -50px;
+            position: absolute;
+            transform: translateX(-50%);
+        }
 
-.projectslide ul li {
-    margin: 0 5px;
-}
+        .projectslide ul li {
+            margin: 0 5px;
+        }
 
-.btnlbl {
-    background-color: black;
-    cursor: pointer;
-    width: 0.2rem;
-    height: 0.2rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    text-align: center;
-    margin-left: 65px;
-    border-radius: .5rem;
-    color: white;
-    outline: none;
-    transition: background-color 0.3s ease;
-}
+        .btnlbl {
+            background-color: black;
+            cursor: pointer;
+            width: 0.2rem;
+            height: 0.2rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            text-align: center;
+            margin-left: 65px;
+            border-radius: .5rem;
+            color: white;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
 
-.btnlbl:hover {
-    background: linear-gradient(180deg, blue, purple);
-}
-@media (max-width: 480px) {
-    .btnlbl {
-        padding: 0.5rem; /* Reduce padding for smaller screens */
-        font-size: 0.8rem; /* Smaller font size */
-        margin-left: 10px; /* Reduce space between buttons */
-    }
-}
-@media (max-width: 768px) {
-    .btnlbl {
-        padding: 0.5rem; /* Reduce padding for smaller screens */
-        font-size: 0.8rem; /* Smaller font size */
-        margin-left: 10px; /* Reduce space between buttons */
-    }
-}
+        .btnlbl:hover {
+            background: linear-gradient(180deg, blue, purple);
+        }
+
+        @media (max-width: 480px) {
+            .btnlbl {
+                padding: 0.5rem; /* Reduce padding for smaller screens */
+                font-size: 0.8rem; /* Smaller font size */
+                margin-left: 10px; /* Reduce space between buttons */
+            }
+        }
+        @media (max-width: 768px) {
+            .btnlbl {
+                padding: 0.5rem; /* Reduce padding for smaller screens */
+                font-size: 0.8rem; /* Smaller font size */
+                margin-left: 10px; /* Reduce space between buttons */
+            }
+        }
     </style>
 </head>
 <body>
@@ -106,40 +108,48 @@
         <div id="wrapper"><!--body of the page-->
             <nav>
                 <h5><!--links-->
-                    <a href="maincode.html" >About Me</a>
-                    <a href="projects.html" >Projects</a>
-                    <a href="contact.html" >Contact Me</a>
-                    <a href="index.html" >Home</a>
+                    <a href="maincode.html">About Me</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                    <a href="index.html">Home</a>
                 </h5>
                 
-                <img src="image.png" width="50px" height="50px">
-                <img src="moon.jpg" width="70px" height="50px">
+                <img src="image.png" width="50" height="50" alt="Logo"> <!-- image size -->
+                <img src="moon.jpg" width="70" height="50" alt="Moon Image"> <!-- image sizw -->
             </nav>
-            <article><!--this would by my first link of he first project box-->
-                <h1>Afeef Hossain's project1 Page</h1> 
-                <div class="frame"><!--idenifier so i can style in css file-->
+            <article><!--this would be my first link of the first project box-->
+                <h1>Afeef Hossain's Project 1 Page</h1> 
+                <div class="frame"><!--identifier so I can style in css file-->
                     <div class="projectslide"><!--slideshow coding also learned during lectures-->
                         <input type="radio" name="button" class="show" id="one" checked>
                         <div class="slide">
-                            <a target="blank" title="report" href="projectpic.JPG"><!--slide 1 size, title, link-->
-                                <img width="412px" alt="report pdf" src="projectpic.JPG">
+                            <a target="_blank" title="report" href="projectpic.JPG"><!--slide 1 size, title, link-->
+                                <img width="412" alt="Report PDF" src="projectpic.JPG"> <!-- image-->
                             </a>
                         </div>
-                        <input type="radio" name="button" class="show" id="two"/><!--slide 2 size title and links-->
-                        <div class="slide"><a target="_blank" title="report" href="projectpic1.JPG">
-                                <img width="412px" alt="report" src="projectpic1.JPG"></a>
+                        <input type="radio" name="button" class="show" id="two"/> <!--slide 2 size title and links-->
+                        <div class="slide">
+                            <a target="_blank" title="report" href="projectpic1.JPG">
+                                <img width="412" alt="Project Picture 1" src="projectpic1.JPG"> <!-- image -->
+                            </a>
                         </div>
-                        <input type="radio" name="button" class="show" id="three"/><!--slide 3 size title and links-->
-                        <div class="slide"><a target="_blank" title="report" href="projectpic2.JPG">
-                                <img width="412px" alt="report" src="projectpic2.JPG"></a>
+                        <input type="radio" name="button" class="show" id="three"/> <!--slide 3 size title and links-->
+                        <div class="slide">
+                            <a target="_blank" title="report" href="projectpic2.JPG">
+                                <img width="412" alt="Project Picture 2" src="projectpic2.JPG"> <!-- image -->
+                            </a>
                         </div>
-                        <input type="radio" name="button" class="show" id="four"/><!--slide 4-->
-                        <div class="slide"><a target="_blank" title="report" href="projectpic3.JPG">
-                                <img width="412px" alt="report" src="projectpic3.JPG"></a>
+                        <input type="radio" name="button" class="show" id="four"/> <!--slide 4-->
+                        <div class="slide">
+                            <a target="_blank" title="report" href="projectpic3.JPG">
+                                <img width="412" alt="Project Picture 3" src="projectpic3.JPG"> <!-- image-->
+                            </a>
                         </div>
-                        <input type="radio" name="button" class="show" id="five"/><!--slide 5 size title links-->
-                        <div class="slide"><a target="_blank" title="report" href="projectpic4.JPG">
-                                <img width="412px" alt="report" src="projectpic4.JPG"></a>
+                        <input type="radio" name="button" class="show" id="five"/> <!--slide 5 size title links-->
+                        <div class="slide">
+                            <a target="_blank" title="report" href="projectpic4.JPG">
+                                <img width="412" alt="Project Picture 4" src="projectpic4.JPG"> <!-- image -->
+                            </a>
                         </div>
                     </div>
                     <ul><!--this is the buttons from 1-5 for each of the slides and making sure you can press them-->
@@ -153,18 +163,17 @@
             </article> 
         </div>
     </header>
-     <footer id="navbar-footer"><!--footer nav with links and copyright aswell as a photo-->
-       <nav>
-        <h6>
-            <a href="maincode.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html" >Contact Me</a>
-            <a href="index.html" >Home</a>
-            <a>&copy; 2024 Afeef Hossain. All rights reserved.</a>
-        </h6>
-        <img src="sunrise.webp" width="70px" height="50px">
-       </nav>
-       
+    <footer id="navbar-footer"><!--footer nav with links and copyright as well as a photo-->
+        <nav>
+            <h6>
+                <a href="maincode.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="index.html">Home</a>
+                <a>&copy; 2024 Afeef Hossain. All rights reserved.</a>
+            </h6>
+            <img src="sunrise.webp" width="70" height="50" alt="Sunrise Image"> <!-- image-->
+        </nav>
     </footer> 
 </body>
 </html>
