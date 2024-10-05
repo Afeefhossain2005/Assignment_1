@@ -150,7 +150,7 @@ nav a{/*this is the transformation for the links*/
 /* Field animation */
 #contact-page form input,
 #contact-page form textarea {
-    width: 100%; /* Full width for mobile */
+    width: 66%; /* for mobile */
     box-sizing: border-box; /* Prevents overflow by including padding in the width */
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -233,7 +233,7 @@ nav a{/*this is the transformation for the links*/
     margin-right: 15px;
     padding: 11px;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 66%; /* Ensure it fits within the screen on mobile */
+    width: 50%; /* Ensure it fits within the screen on mobile */
     max-width: 100%; /* Prevents overflow on smaller screens */
     padding: 10px; /* Adjust padding to make it more compact on small screens */
 }
@@ -250,7 +250,7 @@ nav a{/*this is the transformation for the links*/
 
 @media (max-width: 480px) {
     #contact-form {
-        width: 100%; /* Full width for mobile */
+        width: 66%; /*  for mobile */
         padding: 10px; /* Adjust padding for smaller screens */
     }
     body {
