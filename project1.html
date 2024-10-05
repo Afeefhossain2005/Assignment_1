@@ -21,14 +21,15 @@
 .slide {
     width: 100%;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     height: 100%;
     opacity: 0;
-    transition: opacity 3s;
+    transition: opacity 1s ease-in-out;
 }
 
 .show:checked + .slide {
     opacity: 1;
+    z-index: 1; /* Bring the active slide to the front */
 }
 
 .projectslide img {
@@ -40,6 +41,7 @@
 }
 
 .projectslide {
+    position: relative;
     width: 100%;
     max-width: 412px; 
     margin: 0 auto;
@@ -53,7 +55,8 @@
     margin: 20px auto 0;
     list-style-type: none;
     width: fit-content;
-    position: relative;
+    bottom: -50px;
+    position: absolute;
     transform: translateX(-50%);
 }
 
@@ -75,11 +78,19 @@
     margin-left: 65px;
     border-radius: .5rem;
     color: white;
+    outline: none;
     transition: background-color 0.3s ease;
 }
 
 .btnlbl:hover {
     background: linear-gradient(180deg, blue, purple);
+}
+@media (max-width: 480px) {
+    .btnlbl {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Smaller font size */
+        margin-left: 10px; /* Reduce space between buttons */
+    }
 }
     </style>
 </head>
