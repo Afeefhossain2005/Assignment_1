@@ -308,7 +308,7 @@ box-container {
     nav a, 
     #navbar-footer a {
         float: none; /* Remove float */
-        display: block; /* Stack links vertically */
+        display: inline-block; /* Stack links horizontally */
         width: 100%; /* Full width links */
         text-align: center; /* Center the text */
         padding: 10px;
