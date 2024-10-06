@@ -233,7 +233,7 @@ nav a{/*this is the transformation for the links*/
     margin-right: 15px;
     padding: 11px;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 50%; /* Ensure it fits within the screen on mobile */
+    width: 100%; /* Ensure it fits within the screen on mobile */
     max-width: 100%; /* Prevents overflow on smaller screens */
     padding: 10px; /* Adjust padding to make it more compact on small screens */
 }
@@ -249,7 +249,7 @@ nav a{/*this is the transformation for the links*/
 
 @media (max-width: 480px) {
     #contact-form {
-        width: 66%; /*  for mobile */
+        width: 100%; /*  for mobile */
         padding: 10px; /* Adjust padding for smaller screens */
         background: linear-gradient(180deg, #5a4fcf, #ff7e00); /*180deg means it changes the color from top to bottom in this case it would be purple to bright orange*/
     }
