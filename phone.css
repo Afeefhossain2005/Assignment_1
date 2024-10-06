@@ -1,7 +1,7 @@
 @media only screen
 and (max-width : 480px) {
 body {
-color: white;
+background: linear-gradient(180deg, #5a4fcf, #ff7e00);
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;
 margin:0px;
