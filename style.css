@@ -236,6 +236,25 @@ nav a{/*this is the transformation for the links*/
     width: 50%; /* Ensure it fits within the screen on mobile */
     max-width: 100%; /* Prevents overflow on smaller screens */
     padding: 10px; /* Adjust padding to make it more compact on small screens */
+    background: linear-gradient(180deg, rgba(60, 40, 170, 0.5), rgba(255, 126, 0, 0.5)); /* 50% opacity on both colors */
+}
+@media (max-width: 768px) { /* For tablets */
+    #contact-form {
+        width: 90%; /* Adjust form width for smaller devices */
+        margin: 0 auto; /* Center it on screen */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    #contact-form {
+        width: 95%; /* Make sure it fits smaller screens */
+        margin: 0 auto; /* Center it on screen */
+        padding: 10px;
+
+        /* Ensure transparency stays intact */
+        background: linear-gradient(180deg, rgba(255, 126, 0, 0.5), rgba(255, 204, 0, 0.5)); /* Same gradient with transparency */
+    }
 }
 
 #contact-page form p {
