@@ -13,94 +13,95 @@
     <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <style>
         .projectslide, .Frame {
-            position: relative;
-            height: 525px;
-            width: 300px;
-            margin: auto;
-        }
+    position: relative; /* Positioning for slide container */
+    height: 525px; /* Set a fixed height for the slides */
+    width: 300px; /* Set a fixed width for the slides */
+    margin: auto; /* Center it on the page */
+}
 
-        .slide {
-            width: 100%;
-            overflow: hidden;
-            position: absolute;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
+.slide {
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Hide anything that overflows */
+    position: absolute; /* Absolute positioning for layering */
+    height: 100%; /* Full height of the container */
+    opacity: 0; /* Start off invisible */
+    transition: opacity 1s ease-in-out; /* Smooth transition for fading in/out */
+}
 
-        .show:checked + .slide {
-            opacity: 1;
-            z-index: 1; /* Bring the active slide to the front */
-        }
+.show:checked + .slide {
+    opacity: 1; /* Make the active slide visible */
+    z-index: 1; /* Bring the active slide to the front */
+}
 
-        .projectslide img {
-            width: 100%;
-        }
+.projectslide img {
+    width: 100%; /* Make images responsive */
+}
 
-        .button {
-            display: inline-block;
-        }
+.button {
+    display: inline-block; /* Keep buttons inline */
+}
 
-        .projectslide {
-            position: relative;
-            width: 100%;
-            max-width: 412px; 
-            margin: 0 auto;
-            padding-bottom: 20px;
-        }
+.projectslide {
+    position: relative; /* Position for the whole slideshow */
+    width: 100%; /* Full width of the container */
+    max-width: 412px; /* Max width for larger screens */
+    margin: 0 auto; /* Center it horizontally */
+    padding-bottom: 20px; /* Some space below the slideshow */
+}
 
-        .projectslide ul {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 20px auto 0;
-            list-style-type: none;
-            width: fit-content;
-            bottom: -50px;
-            position: absolute;
-            transform: translateX(-50%);
-        }
+.projectslide ul {
+    display: flex; /* Use flexbox for the buttons */
+    justify-content: center; /* Center the buttons */
+    padding: 0; /* Remove default padding */
+    margin: 20px auto 0; /* Space above the buttons */
+    list-style-type: none; /* No bullets */
+    width: fit-content; /* Shrink to fit content */
+    bottom: -50px; /* Position the buttons below the slides */
+    position: absolute; /* Positioning for absolute placement */
+    transform: translateX(-50%); /* Center the buttons below the slides */
+}
 
-        .projectslide ul li {
-            margin: 0 5px;
-        }
+.projectslide ul li {
+    margin: 0 5px; /* Space between buttons */
+}
 
-        .btnlbl {
-            background-color: black;
-            cursor: pointer;
-            width: 0.2rem;
-            height: 0.2rem;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            text-align: center;
-            margin-left: 65px;
-            border-radius: .5rem;
-            color: white;
-            outline: none;
-            transition: background-color 0.3s ease;
-        }
+.btnlbl {
+    background-color: black; /* Default button color */
+    cursor: pointer; /* Pointer on hover */
+    width: 0.2rem; /* Thin buttons */
+    height: 0.2rem; /* Thin buttons */
+    padding: 1rem; /* Some padding for click area */
+    display: flex; /* Flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 1rem; /* Button text size */
+    text-align: center; /* Center the text */
+    margin-left: 65px; /* Space on the left side */
+    border-radius: .5rem; /* Rounded edges for buttons */
+    color: white; /* Text color */
+    outline: none; /* No outline on focus */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
 
-        .btnlbl:hover {
-            background: linear-gradient(180deg, blue, purple);
-        }
+.btnlbl:hover {
+    background: linear-gradient(180deg, blue, purple); /* Fun color change on hover */
+}
 
-        @media (max-width: 480px) {
-            .btnlbl {
-                padding: 0.5rem; /* Reduce padding for smaller screens */
-                font-size: 0.8rem; /* Smaller font size */
-                margin-left: 10px; /* Reduce space between buttons */
-            }
-        }
-        @media (max-width: 768px) {
-            .btnlbl {
-                padding: 0.5rem; /* Reduce padding for smaller screens */
-                font-size: 0.8rem; /* Smaller font size */
-                margin-left: 10px; /* Reduce space between buttons */
-            }
-        }
+
+@media (max-width: 480px) {
+.btnlbl {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Smaller font size */
+        margin-left: 10px; /* Reduce space between buttons */
+    }
+}
+@media (max-width: 768px) {
+.btnlbl {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Smaller font size */
+        margin-left: 10px; /* Reduce space between buttons */
+    }
+}
     </style>
 </head>
 <body>
@@ -172,7 +173,7 @@
                 <a href="index.html">Home</a>  
             </h6>
             <img src="sunrise.webp" width="70" height="50" alt="Sunrise Image"> <!-- image-->
-            &copy; 2024 Afeef Hossain. All rights reserved.
+            &copy; 2024 Afeef Hossain. All rights reserved.<!--copyright-->
         </nav>
     </footer> 
 </body>

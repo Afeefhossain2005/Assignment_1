@@ -1,4 +1,4 @@
-@media only screen
+@media only screen/*this is the phone screen mode */
 and (max-width : 480px) {
 body {
 background: linear-gradient(180deg, #5a4fcf, #ff7e00);

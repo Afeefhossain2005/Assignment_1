@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6,p,li
     text-decoration: none;
     color: #333;
     border: 1px solid #ddd;
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /*his is a animation command*/
 } 
 /* The following pseudo-class applies to the box class when in a hovered state */ 
 .box:hover 
